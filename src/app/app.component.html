@@ -1,0 +1,12 @@
+<textarea
+  type="text"
+  [(ngModel)]="rajan"
+  id="yourWish"
+  class="form-control mb-1"
+  maxlength="255"
+></textarea>
+<span class="pull-right char"
+  ><em>{{ 255 - rajan.length }} characters left</em></span
+>
+{{ rajan }}
+<button (click)="onClick()">onclick</button>
